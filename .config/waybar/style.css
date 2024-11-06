@@ -1,0 +1,21 @@
+* {
+    font-size: 13px;
+    font-family: "FiraCode Nerd Font Mono";
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #f8f8f2;
+}
+
+#window,
+#memory,
+#clock,
+#battery {
+    color: #15161e;
+    background: #f8f8f2;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 2px 10px;
+}

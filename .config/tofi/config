@@ -1,0 +1,29 @@
+text-color = #cdd6f4ff
+prompt-color = #f38ba8ff
+selection-color = #f9e2afff
+text-cursor-color = #f9e2afff
+background-color = #00000000
+outline-color = #f38ba8ff
+
+font = FiraCode Nerd Font Mono
+font-size = 12
+
+anchor = top-left
+width = 1620
+height = 40
+corner-radius = 0
+outline-width = 0
+border-width = 0
+border-width = 0
+
+prompt-text = "$ "
+placeholder-text = "What do you need ?"
+
+num-results = 10
+horizontal = true
+result-spacing = 40
+
+clip-to-padding = false
+hide-cursor = true
+require-match = false
+history = true
