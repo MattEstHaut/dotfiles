@@ -641,8 +641,16 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        ts_ls = {},
+
+        gopls = {},
+
         zls = {
           cmd = { '/usr/local/bin/zls' },
+        },
+
+        clangd = {
+          cmd = { '/usr/bin/clangd' },
         },
 
         pylsp = {
@@ -749,6 +757,10 @@ require('lazy').setup({
         zig = { 'zig fmt' },
         -- Conform can also run multiple formatters sequentially
         python = { 'isort', 'black' },
+        javascript = { 'eslint' },
+        typescript = { 'eslint' },
+        typescriptreact = { 'eslint' },
+        json = { 'prettier' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
@@ -1000,6 +1012,10 @@ require('lazy').setup({
     },
   },
 })
+
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

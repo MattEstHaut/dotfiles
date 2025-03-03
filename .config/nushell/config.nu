@@ -224,8 +224,10 @@ $env.config = {
     }
 
     filesize: {
-        metric: false # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
-        format: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, auto
+        unit: "metric"
+        precision: 1
+        # metric: false # true => KB, MB, GB (ISO standard), false => KiB, MiB, GiB (Windows standard)
+        # unit: "auto" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, auto
     }
 
     cursor_shape: {
@@ -898,4 +900,12 @@ $env.config = {
 }
 
 use ~/.cache/starship/init.nu
+source ~/.config/nushell/git.nu
+source ~/.config/nushell/nvim.nu
+source ~/.config/nushell/tmux.nu
 source ~/.zoxide.nu
+
+$env.PATH = ($env.PATH | split row (char esep) | append "/home/matteo/.juliaup/bin")
+
+$env.BUN_INSTALL = $"($env.HOME)/.bun"
+$env.PATH = ($env.PATH | append $"($env.BUN_INSTALL)/bin")
